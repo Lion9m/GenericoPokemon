@@ -1,0 +1,12 @@
+<div class="image-container">
+  <div  *ngFor="let item of data">
+    <mat-card class="example-card">
+      <img class="img" [src]="item.sprites.front_default">
+      <mat-card-header>
+        <mat-card-title class="nome">{{item.name}}</mat-card-title>
+        <mat-card-subtitle><strong> Peso:  {{item.weight}}</strong></mat-card-subtitle>
+        <mat-card-subtitle><strong> Altura:  {{item.height}}</strong></mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  </div>
